@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+}
+
+body {
+  color: var(--foreground);
+  background: radial-gradient(circle at 10% 20%, rgba(30, 64, 175, 0.2), transparent 55%),
+    #ffffff;
+  font-family: var(--font-geist-sans), 'Inter', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  min-height: 100vh;
+}
+
+.gradient-ring {
+  background: conic-gradient(from 180deg, rgba(30, 64, 175, 0.4), transparent 65%);
+  filter: blur(48px);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
